@@ -847,7 +847,7 @@ body {
 }
 
 /* LAYOUT NUMÉROTÉ */
-.content {
+.contentt {
   display: grid;
   grid-template-columns: 80px 1fr;
   gap: 40px;
@@ -1238,3 +1238,4 @@ body {
 .biblio-item a:hover {
   color: var(--link-hover);
 }
+
