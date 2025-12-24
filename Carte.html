@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thurdoll' : circuits courts Thur/Doller</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/icone.jpg" type="image/png">
+ <!-- CSS de Leaflet -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+
+<script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">Thurdoll'</div>
+    <nav>
+     
+      <ul>
+        <li><a href="Index.html">Acceuil</a></li>
+        <li><a href="Carte.html">Près de chez vous</a></li>
+        <li><a href="#">En savoir plus</a>
+            <ul>
+              <li><a href="Page_1.html">C'est quoi le circuit court ?</a></li>
+              <li><a href="Page_2.html">Pourquoi favoriser le circuit-court ?</a></li>
+              <li><a href="Page_3.html">Ampleur du phénomène</a></li>
+              <li><a href="Page_4.html">Conclusion et bibliographie</a></li>
+            </ul>
+        </li>
+      </ul>
+    </nav>
+    <a href="Carte.html" class="btn-header">Carte</a>
+  </header>
+
+  <section class="banniere-carte">
+  <h1>Découvrez les producteurs près de chez vous</h1>
+</section>
+
+ <main class="page-carte">
+    <section class="titre-carte">
+      <h1>Carte des producteurs locaux</h1>
+      <p>Explorez les fermes, artisans et marchés partenaires des vallées de la Thur et de la Doller.</p>
+    </section>
+
+
+    <!-- Conteneur Leaflet -->
+    <div id="map"></div>
+
+    <!-- Légende -->
+    <section id="legende" class="legende">
+      <h2>Légende de la carte</h2>
+      <ul>
+        <li><span class="dot rouge"></span> Producteurs de viande et charcuterie</li>
+        <li><span class="dot jaune"></span> Apiculteurs</li>
+        <li><span class="dot vert"></span> Producteurs de fruits et légumes</li>
+        <li><span class="dot bleu"></span> Fermes laitières et fromageries</li>
+        <li><span class="dot violet"></span> Producteurs de vins et alcools</li>
+        <li><span class="dot orange"></span> Autres</li>
+
+      </ul>
+      <p>Chaque point représente un acteur local engagé dans une production durable et respectueuse de l’environnement.</p>
+      <p><strong> ATTENTION :</strong> Plusieurs producteurs ne vendent pas uniquement le type de produits indiqué par la couleur, cliquez sur chaque point pour plus de précisions.</p>
+      <p>Toutes les photos et informations ont été trouvées en libre accès sur leurs sites, réseaux ou par discussion avec les producteurs. Si vous ne souhaitez pas voir une image ou une information, n'hésitez pas à nous contacter. </p>
+    </section>
+  </main>
+
+  <script src="script JS.js"></script>
+
+<footer>
+    <p>© 2025 Thurdoll' — Ensemble pour des circuits courts et durables</p>
+  </footer>
+
+</body>
+</html>

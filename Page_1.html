@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thurdoll' : circuits courts Thur/Doller</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+ <!-- CSS de Leaflet -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-sA+4JrC2cG1Zq1KYbt8M0y92nYPKpRkG7r3ZbJqzT0I="
+  crossorigin="">
+</head> 
+<body>
+<header class="header">
+    <div class="logo">Thurdoll'</div>
+    <nav>
+     
+      <ul>
+        <li><a href="Index.html">Acceuil</a></li>
+        <li><a href="Carte.html">Près de chez vous</a></li>
+        <li><a href="#">En savoir plus</a>
+            <ul>
+              <li><a href="Page_1.html">C'est quoi le circuit court ?</a></li>
+              <li><a href="Page_2.html">Pourquoi favoriser le circuit-court ?</a></li>
+              <li><a href="Page_3.html">Ampleur du phénomène</a></li>
+              <li><a href="Page_4.html">Conclusion et bibliographie</a></li>
+            </ul>
+        </li>
+      </ul>
+    </nav>
+    <a href="Carte.html" class="btn-header">Carte</a>
+  </header>
+
+<main class="circuit-page">
+
+  <!-- INTRO -->
+  <section class="circuit-intro">
+    <h1> C’est quoi le circuit court ?</h1>
+    <span class="intro-bar"></span>
+  </section>
+
+  <!-- A -->
+  <section class="circuit-section section-a">
+    <div class="text-block">
+      <span class="section-letter">A</span>
+
+      
+     <svg xmlns="http://www.w3.org/2000/svg" class="picto" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+</svg>
+
+
+
+      <h2>Le “local” n’est pas le circuit court !</h2>
+
+      <p>
+        Le “local” : ce qui est consommé ici est produit ici. C’est donc vague : à l'échelle de l'UE, d’un État, d’une région ou d’un département. Ainsi, un vin de Bordeaux est déjà “local” par rapport à un vin italien ; un vin italien est déjà “local” par rapport à un vin argentin.
+        Mais le “local” peut être encore plus strict : 30, 50 ou 100 kilomètres autour du point de vente, par exemple ou dans une vallée seulement. 
+        De plus, le local peut être acheté dans une grande surface.
+      </p>
+    </div>
+
+    <div class="image-block">
+      <img src="images/def p8.png" alt="Produits locaux">
+      <span class="image-source">Source : https://www.lelabo-ess.org</span>
+    </div>
+  </section>
+
+  <section class="circuit-section section-b">
+  <span class="section-letter">B</span>
+
+  <h2>Le “circuit-court” : le consommateur est en lien direct avec le producteur !</h2>
+
+  <div class="text-wide">
+    <p>
+      Le but du “circuit-court” est de limiter le plus possible (voir de supprimer) les intermédiaires entre le consommateur et le producteur dans la commercialisation de leur produit.
+      Les circuits-courts n’impliquent pas nécessairement une proximité physique, et sont définis comme une vente présentant un intermédiaire au plus (d’après <a href="economie.gouv.fr">economie.gouv.fr</a>).
+    </p>
+  </div>
+
+  <!-- INFOGRAPHIE -->
+ <div class="infographie clean">
+  <svg viewBox="0 0 900 240" aria-hidden="true">
+
+    <!-- TITRES -->
+    <text x="40" y="40" class="label">Circuit long</text>
+    <text x="40" y="150" class="label strong">Circuit court</text>
+
+    <!-- CIRCUIT LONG -->
+    <line x1="40" y1="80" x2="860" y2="80" class="line muted"/>
+
+    <circle cx="160" cy="80" r="8" class="dot muted"/>
+    <text x="160" y="110">Producteur</text>
+
+    <circle cx="320" cy="80" r="8" class="dot muted"/>
+    <text x="320" y="110">Intermédiaire</text>
+
+    <circle cx="480" cy="80" r="8" class="dot muted"/>
+    <text x="480" y="110">Distributeur</text>
+
+    <circle cx="640" cy="80" r="8" class="dot muted"/>
+    <text x="640" y="110">Magasin</text>
+
+    <circle cx="800" cy="80" r="8" class="dot muted"/>
+    <text x="800" y="110">Consommateur</text>
+
+    <!-- CIRCUIT COURT -->
+    <line x1="40" y1="190" x2="860" y2="190" class="line main"/>
+
+    <circle cx="200" cy="190" r="10" class="dot main"/>
+    <text x="200" y="220">Producteur</text>
+
+    <circle cx="700" cy="190" r="10" class="dot main"/>
+    <text x="700" y="220">Consommateur</text>
+
+  </svg>
+</div>
+
+
+  <div class="text-wide">
+    <p>
+      Ce mode de distribution s’oppose au circuit traditionnel (circuit long), qui nécessite de nombreux intermédiaires et transports pour aller du producteur au client final (chaîne d’approvisionnement incluant négociants, distributeurs, supermarchés, etc.).
+    </p>
+  </div>
+
+  <div class="note-editoriale">
+    Il n’existe pas de certification/ label officiel « circuit court ».
+  </div>
+</section>
+
+
+  <!-- C -->
+  <section class="circuit-section section-c">
+    <span class="section-letter">C   </span>
+    <svg xmlns="http://www.w3.org/2000/svg" class="picto"fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+</svg>
+
+    <h2>Les types de circuits courts auquels les producteurs ont recours sont multiples :</h2>
+
+    <div class="intro-text">
+      <p>
+        La vente directe : ici, tous les intermédiaires sont supprimés : c’est un échange direct des produits du producteur au consommateur. Ainsi, les produits issus de l’achat-revente ne peuvent être commercialisés dans le cadre d’une vente directe. Aucun intermédiaire ne saurait être toléré, dans le respect de l’article L. 121-2 du Code de la consommation.
+      </p>
+    </div>
+
+    <div class="grid-c">
+      <div class="card">
+        <p>Elle inclut :</p>
+        <ul>
+          <li>la vente sur place à la ferme ;</li>
+          <li>la vente sur les marchés, les foires ou les salons ;</li>
+          <li>la vente par distributeur automatique (réfrigéré ou non) appartenant à l’agriculteur ;</li>
+          <li>la cueillette libre-service (le client récolte puis paye la quantité cueillie) ou libre-récolte (le client achète à l’avance une production et récolte quand il le veut);</li>
+          <li>la livraison directe au consommateur à domicile ou en point relais ;</li>
+          <li>la vente en ligne sur des plateformes e-commerces des agriculteurs ;</li>
+          <li>la vente par correspondance sur catalogue ;</li>
+          <li>la vente dans un local collectif ;</li>
+          <li>la restauration à la ferme (table d’hôtes, repas fermiers, ferme auberge, etc.).</li>
+        </ul>
+      </div>
+
+      <div class="image-block">
+        <img src="images/schéma p26.png"alt="Producteur">
+        <span class="image-source">Source : https://www.lelabo-ess.org</span>
+      </div>
+    </div>
+
+    <div class="intro-text">
+      <p>
+        La vente indirecte encore considérée comme circuit court quand il y a un seul et unique intermédiaire entre le producteur et le consommateur
+      </p>
+
+      <p>Elle inclut :</p>
+    </div>
+
+    <div class="card large">
+      <ul>
+        <li>la vente en point de vente collectif regroupant plusieurs producteurs se regroupent pour commercialiser leurs produits dans le cadre d'un circuit court organisé ;</li>
+        <li>la vente auprès de restaurants traditionnels ou collectifs (cantines, maisons de retraite…) ;</li>
+        <li>la vente à un commerçant (type magasins bio, de produits locaux ou de produits en vrac) ;</li>
+        <li>la vente auprès d’un groupement d’achats (associations de consommateurs) ;</li>
+        <li>la vente par un autre producteur.</li>
+      </ul>
+    </div>
+  </section>
+
+ <section class="circuit-section section-d">
+  <div class="section-d-inner">
+
+    <span class="section-letter visible">D</span>
+
+    <svg class="picto" viewBox="0 0 24 24">
+      <path d="M4 20h16M6 16h12M8 12h8"/>
+    </svg>
+
+    <h2>Quels produits sont concernés ?</h2>
+
+    <div class="text-wide">
+      <p>
+        Les produits vendus en circuit court sont des produits agricoles ou horticoles. Ils peuvent être bruts (viande, oeufs fruits et légumes) ou transformés (charcuteries, vin-bières et spiritueux, jus de fruits et les autres boissons, le miel, les huiles, laitage, le pain, les farines, les fleurs, les plantes ornementales, fruitières et potagères)
+      </p>
+
+      <p>
+        Certains matériaux de construction (terre, ardoise...) et les produits fabriqués à partir de laine locale peuvent, a priori, aussi être inclus dans la notion de circuit court.
+        Les produits peuvent être issus de l’agriculture biologique ou non.
+        Sur notre carte nous nous sommes concentrés sur l’agriculture.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+</main>
+
+<footer>
+    <p>© 2025 Thurdoll' — Ensemble pour des circuits courts et durables </p>
+  </footer>
+</body>
+</html>
