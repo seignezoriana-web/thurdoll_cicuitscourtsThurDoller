@@ -98,6 +98,18 @@ nav ul li ul li a:hover {
   background: #ffffff; /* taupe plus clair pour sous-menu */
   color: #ffffff; /* contraste */
 }
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 /* Flèche SVG stylisée */
 nav ul li ul li a::after {
@@ -1238,4 +1250,5 @@ body {
 .biblio-item a:hover {
   color: var(--link-hover);
 }
+
 
