@@ -1241,7 +1241,7 @@ body {
 /* liens sobres */
 .biblio-item a {
   display: inline-block;
-  margin-top: 25px;
+  margin-top: none;
   font-weight: 600;
   color: var(--link-color);
   text-decoration: none;
@@ -1250,5 +1250,6 @@ body {
 .biblio-item a:hover {
   color: var(--link-hover);
 }
+
 
 
